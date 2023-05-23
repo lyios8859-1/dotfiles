@@ -61,3 +61,6 @@ stow stow -t ~
 PS：如果不管三七二十一就前提配置好了`stow/.stowrc`文件 ，一上来就直接执`stow stow -t ~`命令，以后就执行不加 -t ~ 的参数了，比如直接 stow zsh 即可，就把 zsh 下的 .zshrc 软连接到 $HOME 目录下。
 
 **查看文件真实的路径**：`realpath xxxFileName`，对连接文件最友好。
+
+1. **删除**： `stow -D xxx`，通过 stow 删除一些配置文件,  xxx 是 dotfile 中指定需要生成软连接的文件名
+2. **更新**： `stow -R xxx`，通过 stow 更新一些配置文件,  xxx 是 dotfile 中指定需要生成软连接的文件名

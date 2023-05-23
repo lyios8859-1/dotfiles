@@ -1,0 +1,9 @@
+[credential]
+	helper = store
+[core]
+	quotepath = false
+	pager = mor
+	editor = vim
+[user]
+	email = 194962218@qq.com
+	name = timly
