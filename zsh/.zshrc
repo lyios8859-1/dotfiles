@@ -1,10 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-neofetch
-
-export EDITOR=nvim
-
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -104,8 +100,25 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+
+# 系统信息打印工具
+neofetch
+
+# 设置 bash 默认文本编辑器为vim
+# export EDITOR=vim
+export EDITOR=nvim
+
 # 使得 vim 执行时直接运行的是 nvim
 alias vim="nvim"
+
+# 让 grep 搜索出来的东西带上颜色
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+# [脚本]设置看到的文件夹带上颜色
+[ ! -e ~/.dircolors ] && eval $(dircolors -p > ~/.dircolors)
+[ -e /bin/dircolors ] && eval $(dircolors -b ~/.dircolors)
 
 # 配置 Deno 全局变量
 export DENO_INSTALL="$HOME/.deno"

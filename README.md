@@ -26,7 +26,7 @@ mkdir $HOME/dotfiles
 
 ## 实例
 
-以 `.zshrc` 为例， 创建 `zsh` 的配置文件夹/。
+以 `.zshrc` 为例， 创建 `zsh` 的配置文件夹。
 
 ```sh
 mkdir -p $HOME/dotfiles/zsh
@@ -58,4 +58,6 @@ echo '--target=~' > stow/.stowrc
 stow stow -t ~
 ```
 
-PS：如果不管三七二十一就的前提配置好了`stow/.stowrc`文件 ，一上来就直接执`stow stow -t ~`命令，以后就执行不加 -t ~ 的参数了，比如直接 stow zsh 即可，就把 zsh 下的 .zshrc 软连接到 $HOME 目录下。
+PS：如果不管三七二十一就前提配置好了`stow/.stowrc`文件 ，一上来就直接执`stow stow -t ~`命令，以后就执行不加 -t ~ 的参数了，比如直接 stow zsh 即可，就把 zsh 下的 .zshrc 软连接到 $HOME 目录下。
+
+**查看文件真实的路径**：`realpath xxxFileName`，对连接文件最友好。
