@@ -12,7 +12,6 @@ vim.api.nvim_create_autocmd("User", {
   end,
 })
 
-
 --
 -- 各种语言的配置说明
 -- https://github.com/AstroNvim/astrocommunity/tree/main/lua/astrocommunity/pack
