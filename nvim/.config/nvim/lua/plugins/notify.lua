@@ -1,6 +1,5 @@
 return {
-  -- lazy = true,
-  -- event = "VeryLazy",
+  lazy = false,
   "rcarriga/nvim-notify",
   config = function()
     vim.opt.termguicolors = true
