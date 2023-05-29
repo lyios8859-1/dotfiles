@@ -109,7 +109,10 @@ neofetch
 export EDITOR=nvim
 
 # 使得 vim 执行时直接运行的是 nvim
-alias vim="nvim"
+# alias vim="nvim"
+alias tree = 'tree -a -I ".git|.svelte-kit|node_modules"'
+# alias PATH = 'echo -e ${PATH//:/\\n}'
+
 
 # 让 grep 搜索出来的东西带上颜色
 alias grep='grep --color=auto'

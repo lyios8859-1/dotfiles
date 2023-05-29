@@ -91,3 +91,34 @@ vim.keymap.set({mode}, {lhs}, {rhs}, {opts})
   - buffer: 它可以是布尔值或数字。 如果我们分配布尔值 true 这意味着键绑定将只在当前文件中有效。 如果我们分配一个数字，它需要是一个打开的缓冲区的“id”。
   - silent: 一个布尔值。 确定键绑定是否可以显示消息。 默认值为假。
   - expr: 一个布尔值。 如果启用，它可以使用 vimscript 或 lua 来计算 {rhs} 的值。 默认值为假。
+
+```tex
+--
+-- 各种语言的配置说明
+-- https://github.com/AstroNvim/astrocommunity/tree/main/lua/astrocommunity/pack
+--
+```
+
+## Tmux
+
+- `Ctrl+b %` ：划分左右两个窗格。
+- `Ctrl+b "` ：划分上下两个窗格。
+- `Ctrl+b <arrow key>`：光标切换到其他窗格。arrow key 是指向要切换到的窗格的方向键
+- `Ctrl+b ;` ：光标切换到上一个窗格。
+- `Ctrl+b o` ：光标切换到下一个窗格。
+- `Ctrl+b {` ：当前窗格与上一个窗格交换位置。
+- `Ctrl+b }` ：当前窗格与下一个窗格交换位置。
+- `Ctrl+b Ctrl+o` ：所有窗格向前移动一个位置，第一个窗格变成最后一个窗格。
+- `Ctrl+b Alt+o` ：所有窗格向后移动一个位置，最后一个窗格变成第一个窗格。
+- `Ctrl+b x` ：关闭当前窗格。
+- `Ctrl+b !` ：将当前窗格拆分为一个独立窗口。
+- `Ctrl+b z` ：当前窗格全屏显示，再使用一次会变回原来大小。
+- `Ctrl+b Ctrl+<arrow key>` ：按箭头方向调整窗格大小。
+- `Ctrl+b q` ：显示窗格编号。
+
+- `Ctrl+b c` ：创建一个新窗口，状态栏会显示多个窗口的信息。
+- `Ctrl+b p` ：切换到上一个窗口（按照状态栏上的顺序）。
+- `Ctrl+b n` ：切换到下一个窗口。
+- `Ctrl+b <number>` ：切换到指定编号的窗口，其中的 number 是状态栏上的窗口编号。
+- `Ctrl+b w` ：从列表中选择窗口。
+- `Ctrl+b ,` ：窗口重命名。

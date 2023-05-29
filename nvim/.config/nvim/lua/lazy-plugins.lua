@@ -16,6 +16,9 @@ require("lazy").setup({
   -- import 配置表示 lazy 会自己识别 lua/plugins 下的配置文件
   spec = { { import = "plugins" } },
   default = { lazy = true, version = true },
+  ui = {
+    border = "rounded"
+  },
   install = {
     missing = true,
     colorscheme = {

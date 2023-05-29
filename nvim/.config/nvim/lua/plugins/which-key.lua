@@ -1,5 +1,5 @@
 return {
-  lazy = true,
+  -- lazy = true,
   event = "VeryLazy",
   "folke/which-key.nvim",
   config = function()
