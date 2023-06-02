@@ -70,7 +70,7 @@ ZSH_THEME="bira" # "gnzh" # "jonathan" # "pmcgee" # "strug" # "bira"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting autojump)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -110,9 +110,10 @@ export EDITOR=nvim
 
 # 使得 vim 执行时直接运行的是 nvim
 # alias vim="nvim"
-alias tree = 'tree -a -I ".git|.svelte-kit|node_modules"'
-# alias PATH = 'echo -e ${PATH//:/\\n}'
+alias path='echo -e ${PATH//:/\\n}'
+alias tree='tree -a -I ".svelte-kit|.git|node_modules"'
 
+alias c=clear
 
 # 让 grep 搜索出来的东西带上颜色
 alias grep='grep --color=auto'
