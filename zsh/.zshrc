@@ -111,7 +111,7 @@ export EDITOR=nvim
 # 使得 vim 执行时直接运行的是 nvim
 # alias vim="nvim"
 alias path='echo -e ${PATH//:/\\n}'
-alias tree='tree -a -I ".svelte-kit|.git|node_modules"'
+alias tree='tree -a -I ".svelte-kit|.git|node_modules|target"'
 
 alias c=clear
 
