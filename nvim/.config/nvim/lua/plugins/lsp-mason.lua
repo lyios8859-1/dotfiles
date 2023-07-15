@@ -107,7 +107,6 @@ return {
         --   print('>>>>>>>>>rust>>>>>>>>>>>>>>')
         -- end
       })
-
     end
   },
   {
@@ -148,15 +147,6 @@ return {
             vim.lsp.buf.format { async = true }
           end, opts)
 
-          -- 光标所在的字符词语高亮相同的单词
-          vim.api.nvim_exec([[
-            augroup lsp_document_highlight
-              autocmd! * <buffer>
-              autocmd CursorHold <buffer> lua vim.lsp.buf.document_highlight()
-              autocmd CursorMoved <buffer> lua vim.lsp.buf.clear_references()
-            augroup END
-          ]], false)
-
           local client = vim.lsp.get_client_by_id(ev.data.client_id)
           if client.server_capabilities.documentHighlightProvider then
             -- 光标所在的字符词语高亮相同的单词
@@ -168,10 +158,8 @@ return {
               augroup END
             ]], false)
           end
-
         end,
       })
-
     end
   }
 }
