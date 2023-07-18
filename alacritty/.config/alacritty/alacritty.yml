@@ -117,11 +117,12 @@ colors:
     y: 0
 
 window:
-  opacity: 0.9
+  opacity: 0.85
   padding:
-    x: 22
-    y: 26
+    x: 0
+    y: 10
   decorations: full
+  dynamic_padding: false
   dimensions:
     columns: 106
     lines: 25
@@ -130,7 +131,7 @@ scrolling:
   # 回滚缓冲区中的最大行数,指定“0”将禁用滚动。
   history: 100000
   # 滚动行数
-  multiplier: 4
+  multiplier: 5
 
 cursor:
   style:
