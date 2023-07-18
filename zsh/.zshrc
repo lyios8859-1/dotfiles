@@ -106,17 +106,6 @@ neofetch
 alias path='echo -e ${PATH//:/\\n}'
 alias tree='tree -a -I ".svelte-kit|.git|node_modules|target"'
 
-alias ll='ls -alFh'
-alias la='ls -A'
-alias ls='ls -h'
-alias l='ls -CF'
-
-alias c=clear
-
-# Add an "alert" alias for long running commands. Use link so:
-#   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-
 # 让 grep 搜索出来的东西带上颜色
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
@@ -125,6 +114,13 @@ alias fgrep='fgrep --color=auto'
 # [脚本]设置看到的文件夹带上颜色
 [ ! -e ~/.dircolors ] && eval $(dircolors -p > ~/.dircolors)
 [ -e /bin/dircolors ] && eval $(dircolors -b ~/.dircolors)
+
+alias ll='ls -alFh'
+alias l='ls -CF'
+# alias la='ls -A'
+# alias ls='ls -h'
+
+alias c=clear
 
 # 设置 bash 默认文本编辑器为vim
 # 使得 vim 执行时直接运行的是 nvim
