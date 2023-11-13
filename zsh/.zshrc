@@ -8,7 +8,9 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="bira" # "gnzh" # "jonathan" # "pmcgee" # "strug" # "bira"
+# "bira" "gnzh", "fino-time" "amuse"  "avit" "frontcube" "fwalch" "gallois" "nanotech" "nebirhos" "peepcode" "philips" "pmcgee" "simple" "strug" "tjkirch" "re5et"
+ZSH_THEME="bira"
+# ZSH_THEME="fwalch"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -131,3 +133,12 @@ export EDITOR=nvim
 # 配置 Deno 全局变量
 export DENO_INSTALL="$HOME/.deno"
 . "$DENO_INSTALL/bin"
+
+# bun completions
+[ -s "/home/timly/.bun/_bun" ] && source "/home/timly/.bun/_bun"
+
+export GOPROXY=https://goproxy.cn
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
