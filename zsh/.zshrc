@@ -106,7 +106,7 @@ source $ZSH/oh-my-zsh.sh
 neofetch
 
 alias path='echo -e ${PATH//:/\\n}'
-alias tree='tree -a -I ".svelte-kit|.git|.vscode|node_modules|target"'
+alias tree='tree -a -I ".svelte-kit|.git|.vscode|.tmp|node_modules|target"'
 
 # 让 grep 搜索出来的东西带上颜色
 alias grep='grep --color=auto'
