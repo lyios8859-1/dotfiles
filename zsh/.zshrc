@@ -134,7 +134,7 @@ export EDITOR=nvim
 export DENO_INSTALL="$HOME/.deno"
 . "$DENO_INSTALL/bin"
 
-export CC=usr/bin/gcc
+# export CC=usr/bin/gcc
 
 . "$HOME/.cargo/env"
 
@@ -147,5 +147,3 @@ export GOPROXY=https://goproxy.cn
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-
-
